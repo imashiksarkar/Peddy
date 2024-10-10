@@ -77,6 +77,26 @@
     }
   }
 
+  .countdown {
+    @apply p-8 bg-white rounded-lg flex flex-col items-center gap-2;
+
+    h1 {
+      @apply text-4xl font-black;
+    }
+
+    p {
+      @apply text-gray-600;
+    }
+
+    .countdown__counter {
+      @apply text-6xl font-black text-gray-950;
+    }
+
+    img {
+      @apply w-12;
+    }
+  }
+
   .loader {
     width: 60px;
     aspect-ratio: 2;
