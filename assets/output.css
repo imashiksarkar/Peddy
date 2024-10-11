@@ -831,10 +831,18 @@ video {
 
 .pet-details-tags{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .pet-details-tags{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.pet-details-tags {
   li{
     display: flex;
   }
